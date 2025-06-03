@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pineapple</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+	body{
+		margin: 0px;
+		padding: 0px;
+	}
+	.logo{
+		height: 70px;
+		width: 100%;
+		background: white;
+		display: flex;
+	}
+	.name{
+		height: 40px;
+		width: 10%;
+		padding-top: 25px;
+	} 
+	.nav{
+		width: 100%;
+		height: 40px;
+		background: #d9d43f;
+		display: flex;
+	}
+	.nav ul{
+		display: flex;
+	}
+	.nav ul li{
+		list-style: none;
+		display: inline-block;
+	}
+	.nav ul li a{
+		text-decoration: none;
+		color: grey;
+		font-size: 18px;
+		border-radius: 10px;
+		box-sizing: border-box;
+		padding: 5px 15px;
+		padding-top: 16px;
+	}
+	.nav ul li a:hover{
+		background: #f8fc1d;
+	}
+	.search{
+		padding-left: 700px;
+		padding-top: 10px;
+	}
+	.search button{
+		border-radius: 5px;
+		border: 2px solid;
+		background: #c2bc29;
+	}
+	/.search input{/
+		background: #c2bc29;
+	}
+	.search button:hover{
+		cursor: pointer;
+	}
+	.read{
+		width: 100%;
+		height: 35px;
+		background: white;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.read button{
+		background: red;
+		color: white;
+		height: 30px;
+	}
+	.read button:hover{
+		cursor: pointer;
+	}
+	.photo{
+		height: 100px;
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.photo1{
+		height: 100px;
+		width: 20%;
+		border-radius: 5px;
+		border: 10px solid #cccccc;
+		
+	}
+	.photo1 img{
+		width: 100%;
+		height: 100px;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+	}
+	.photo2{
+		height: 100px;
+		width: 20%;
+		border-radius: 5px;
+		border: 10px solid #cccccc;
+		
+	}
+	.photo2 img{
+		height: 100px;
+		width: 100%;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+	}
+	.photo3{
+		height: 100px;
+		width: 20%;
+		border-radius: 5px;
+		border: 10px solid #cccccc;
+	}
+	.photo3 img{
+		height: 100px;
+		width: 100%;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+	}
+	.Photo{
+		height: 100px;
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.Photo1{
+		height: 100px;
+		width: 20%;
+		border-radius: 5px;
+		border: 10px solid #cccccc;
+		
+	}
+	.Photo1 img{
+		width: 100%;
+		height: 100px;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+	}
+	.Photo2{
+		height: 100px;
+		width: 20%;
+		border-radius: 5px;
+		border: 10px solid #cccccc;
+		
+	}
+	.Photo2 img{
+		height: 100px;
+		width: 100%;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+	}
+	.Photo3{
+		height: 100px;
+		width: 20%;
+		border-radius: 5px;
+		border: 10px solid #cccccc;
+	}
+	.Photo3 img{
+		height: 100px;
+		width: 100%;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+	}
+	.line{
+		width: 100%;
+		height: 20px;
+		background: #f0ea2d;
+	}
+	.end{
+		width: 100%;
+		height: 300px;
+		background: #dfc626;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.text1
+	{
+		width: 20%;
+		height: 250px;
+		color: #715c0e;
+	}
+	.text2
+	{
+		width: 20%;
+		height: 250px;
+		color: #715c0e;
+	}
+	.text3
+	{
+		width: 20%;
+		height: 250px;
+		color: #715c0e;
+	}
+	.text4
+	{
+		width: 20%;
+		height: 250px;
+		color: #716c0e;
+	}
+	.End{
+		width: 100%;
+		height: 80px;
+		background: #ccb524;
+	}
+</style>
+</head>
+<body>
+<div class="logo">
+	<div class="img"><img src="https://i.pinimg.com/474x/83/41/28/834128c7bf86223cc35afbc362e47ebb.jpg" height="70px" width="100%"></div>
+	<div class="name"><font color="grey" size="5px"><b>Pineapple</b></font></div>
+</div>
+<div class="nav">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Gallery</a></li>
+		<li><a href="#">Templates</a></li>
+		<li><a href="#">Themes</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+	<div class="search">
+		<input type="search" name="search" placeholder="Enter keyword here..">
+		<button>Search</button>
+	</div>
+</div>
+<h1>FREE CSS TEMPLATES</h1>
+<p><font style="color: #d9d43f;">Lorem ipsum </font>dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation<font style="color: #d9d43f;"> ullamco laboris</font> nisi ut aliquip sex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="read">
+<button>Read More</button>
+</div>
+<hr color="grey">
+<h2><font style="color: #aebb02">Mega Development Projects</font></h2>
+<div class="photo">
+	<div class="photo1">
+		<img src="https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/86144ce16918ef3f453171c876cbd6fd.jpg">
+		<h3>Lorem ipsum dolor sit amet</h3><p> consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.</p>
+	</div>
+	<div class="photo2">
+		<img src="https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2021/5/14/poeacai8joifw0lqniov/kratos-atreus-alfheim-god-of-war">
+		 <h3>Duis aute irure dolor</h3> <p>in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="photo3">
+		<img src="https://i.redd.it/yhbkbdoiykd71.png">
+		<h3>Lorem ipsum dolor sit amet</h3><p>consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.</p>
+</div>
+</div><br><br><br><br><br><br><br><br><br><br><br>
+<div class="Photo">
+	<div class="Photo1">
+		<img src="https://preview.redd.it/we-made-realistic-landscape-in-minecraft-v0-dh6zkihzdk2d1.png?auto=webp&s=d2f131f0f90f7f6d724432a0c67dfb7a5796e32c">
+		<h3>Lorem ipsum dolor sit amet</h3><p> consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.</p>
+	</div>
+	<div class="Photo2">
+		<img src="https://i.ytimg.com/vi/vRj0cs5W3hQ/maxresdefault.jpg">
+		 <h3>Duis aute irure dolor</h3> <p>in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="Photo3">
+		<img src="https://media.istockphoto.com/id/644053990/photo/multicolored-northern-lights-on-canadian-forest.jpg?s=612x612&w=0&k=20&c=J5mL8YiGlCtX5WbVYJ6OdXHgng_XevEGfZUiXD1FBjw=">
+		<h3>Lorem ipsum dolor sit amet</h3><p>consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.</p>
+	</div>
+</div><br><br><br><br><br><br><br><br><br><br><br>
+<div class="read">
+<button>Read More</button>
+</div>
+<div class="line">
+</div>
+
+<div class="end">
+<div class="text1">
+	<h2>Events</h2>Lorem ipsum dolor sit amet,<br><br> consectetur adipisicing elit, sed do<br><br> eiusmod
+	tempor incididunt ut labore et<br><br> dolore magna aliqua. Ut enim ad<br><br>minim veniam,
+	quis nostrud.
+</div>
+<div class="text2">
+		<h2>Partners</h2>exercitation ullamco laboris nisi ut<br><br>aliquip sex ea commodo
+	consequat.<br><br> Duis aute irure dolor in reprehenderit<br><br> in voluptate velit esse
+	cillum<br><br> dolore eu fugiat nulla pariatur.
+</div>
+<div class="text3">
+	<h2>Profile</h2>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut<h2>Join Us</h2>labore et in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Duis aute irure dolor in reprehenderit<br><i class="fa-brands fa-twitter fa-beat"></i>  <i class="fa-solid fa-wifi fa-beat"></i>
+</div>
+<div class="text4">
+	<h2>HTML + CSS</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla. 
+</div>
+</div>
+</div>	
+</div>
+<div class="End"></div>
+
+<!-- <input type="color"> -->
+</body>
+</html>						 
